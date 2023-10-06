@@ -1,0 +1,22 @@
+ion-card.register-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ion-item {
+  margin-bottom: 15px;
+  --border-radius: 20px; /* Define o raio das bordas dos campos de entrada */
+}
+
+ion-input {
+  --border-radius: 20px; /* Define o raio das bordas dos campos de entrada */
+}
+
+ion-button.register-button {
+  background-color: #4caf50; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border-radius: 20px;
+  margin-top: 15px;
+}
