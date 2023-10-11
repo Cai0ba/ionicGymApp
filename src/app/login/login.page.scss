@@ -1,18 +1,29 @@
 ion-card {
   margin: 20px;
+  border-radius: 20px;
 }
 
 ion-item {
   margin-bottom: 15px;
+  border-radius: 20px;
 }
 
 ion-button {
   margin-top: 15px;
+  border-radius: 20px;
 }
 ion-content {
-  --background: url('../../assets/images/backgroundLoginImage.jpg')0 0/100% 100% no-repeat;
   background-position: center center;
   background-size:cover;
   background-repeat: no-repeat;
   height: auto;
+  color: #1b1b1b;
+  border-radius: 20px;
+  }
+
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }

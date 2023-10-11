@@ -1,36 +1,31 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Cadastro Academia
-    </ion-title>
-  </ion-toolbar>
+  <ion-buttons slot="start" id="backIcon">
+    <ion-back-button defaultHref="/login" text=""></ion-back-button>
+  </ion-buttons>
 </ion-header>
-
 <ion-content class="ion-padding">
-  <ion-card class="register-card">
-    <ion-card-content>
-      <ion-item>
-        <ion-label position="floating">Nome</ion-label>
-        <ion-input type="text" [(ngModel)]="nome"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">CPF</ion-label>
-        <ion-input type="text" [(ngModel)]="cpf" mask="000.000.000-00"></ion-input>
-      </ion-item>
-
-
-      <ion-item>
-        <ion-label position="floating">E-mail</ion-label>
-        <ion-input type="email" [(ngModel)]="email"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Senha</ion-label>
-        <ion-input type="password" [(ngModel)]="senha"></ion-input>
-      </ion-item>
-
-      <ion-button expand="full" class="register-button" (click)="register()">Registrar</ion-button>
-    </ion-card-content>
-  </ion-card>
+<div class="image-container">
+  <img src="../../assets/images/logoPNG.png" alt="Sua imagem">
+</div>
+<ion-card class="register-card">
+  <ion-card-content>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="text" [(ngModel)]="cpf" maxlength="11" mask="000.000.00000"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+    <ion-button expand="full" class="register-button" (click)="register(nome,cpf,email,senha)" shape="round">Registrar</ion-button>
+  </ion-card-content>
+</ion-card>
 </ion-content>

@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'home-aluno',
+    loadChildren: () => import('./home-aluno/home-aluno.module').then( m => m.HomeAlunoPageModule)
+  },
 ];
 
 @NgModule({

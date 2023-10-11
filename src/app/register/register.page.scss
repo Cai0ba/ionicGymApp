@@ -1,22 +1,35 @@
 ion-card.register-card {
-  background-color: #ffffff;
+  background-color: #1b1b1b;
   border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1px;
 }
 
 ion-item {
   margin-bottom: 15px;
-  --border-radius: 20px; /* Define o raio das bordas dos campos de entrada */
+  --border-radius: 20px;
 }
 
 ion-input {
-  --border-radius: 20px; /* Define o raio das bordas dos campos de entrada */
+  --border-radius: 20px;
 }
 
 ion-button.register-button {
-  background-color: #4caf50; /* Cor de fundo do botão */
-  color: #fff; /* Cor do texto do botão */
+  background-color: #4caf50;
+  color: #fff;
   border-radius: 20px;
   margin-top: 15px;
 }
+
+.image-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#backIcon {
+  color: gold;
+}
+

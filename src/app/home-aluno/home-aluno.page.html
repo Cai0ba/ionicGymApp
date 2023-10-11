@@ -1,0 +1,21 @@
+  <div class="logo-container">
+    <img src="../../assets/images/logoPNG.png" alt="Logo da Empresa">
+  </div>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Lista de Aulas
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let aula of aulas">
+          {{ aula }}
+          <ion-button slot="end" fill="clear" (click)="entrarNaAula(aula)">Entrar</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" shape="round" (click)="verProfessores()">Ver Professores</ion-button>
+  <ion-button expand="full" shape="round" (click)="verAulas()">Ver Aulas</ion-button>
+</ion-content>
